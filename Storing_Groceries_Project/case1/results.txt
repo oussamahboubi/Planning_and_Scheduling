@@ -1,0 +1,21 @@
+
+Defining problem CASE1 ...
+
+---------------------------------------------------------------------------
+Problem CASE1 with :WHICH = :FIRST, :VERBOSE = :PLANS
+Totals: Plans Mincost Maxcost Expansions Inferences  CPU time  Real time
+           1    10.0    10.0         37        112     0.001      0.001
+
+Plans:
+(((!CHECKCURRENTLOCATION TABLE)
+ (!WALKFROMTO TABLE CUPBOARD)
+ (!OPEN CUPBOARD)
+ (!FOUNDALLSHELFS CUPBOARD)
+ (!WALKFROMTO CUPBOARD TABLE)
+ (!TAKEOFF OBJ TABLE)
+ (!CHECKNOOBJECTTOBEMOVEDLEFT TABLE)
+ (!WALKFROMTO TABLE CUPBOARD)
+ (!PUTON OBJ SHELF)
+ (!END)))
+
+
