@@ -1,0 +1,25 @@
+
+(in-package :shop2-user)
+(defproblem case3 atHome
+(	(on(obj1 table))
+	(on(obj2 table))
+	(on(obj3 table))
+	(on(obj4 table))
+	(on(obj5 table))
+	(at somewhereInRoom)
+	(has(cupboard shelf1))
+	(has(cupboard shelf2))
+	(isTable table)
+	(isCupboard cupboard)
+	(close cupboard)
+	(knowLocation shelf1)
+	(knowLocation shelf2)
+	(objectShouldBeMoved obj1)
+	(objectShouldBeMoved obj2)
+	(objectShouldBeMoved obj3)
+	(objectShouldBeMoved obj4)
+	(objectShouldBeMoved obj5)
+	) ((start table cupboard )))
+
+(find-plans 'case3 :verbose :plans :which :FIRST)
+
